@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task 3</title>
+</head>
+<body>
+    <script>
+        
+        
+        function integer (num){
+
+            let myNum = []
+
+             for( i=1; i<=num; i++){
+                if (i%2===0 && i%3===0 && i%5===0) {
+                    myNum.push("yu-gi-oh");
+                }else if (i%2 ===0 && i%3===0){
+                    myNum.push("yu-gi");
+                }else if(i%2===0 && i%5===0){
+                    myNum.push("yu-oh");
+                }else if(i%3===0 && i%5===0){
+                    myNum.push("gi-oh");
+                }else if (i%5===0) {
+                    myNum.push("oh");
+                } else if (i%3===0) {
+                    myNum.push("gi");
+                }else if (i%2===0 ) {
+                    myNum.push("yu");
+                }else{
+                    myNum.push(i);
+                }
+             }
+             console.log(myNum);
+             return myNum;
+        }
+            integer(100);
+            integer(10);
+        
+    </script>
+</body>
+</html>
